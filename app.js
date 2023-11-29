@@ -37,7 +37,7 @@ app.use('/product',product)
 app.use('/user',userroute)
 app.use('/category',category)
 
-app.use('*',(req,res,next)=>
+app.use('',(req,res,next)=>
 {
     res.status(500).json({
         error:'not  found '
